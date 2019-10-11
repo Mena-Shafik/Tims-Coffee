@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+Mena Shafik 
+Created June 12,2015
+Assignment 5
+main page where they can order coffee and where they will go to a result page and display their order
+they also have the choice to go to the slang page
+-->
+<html>
+   <head>
+      <title>Tim Horton's Order</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ek+Mukta">
+      <link rel="stylesheet" href="css/timcss.css">
+   </head>
+   <body>
+      <div>
+         <div class="imgWrapper">
+            <center><p><img src="Images/title.jpg" alt="Title Image"></p></center>
+
+         </div>
+         <center>
+
+            <h1>
+               Welcome to Tim Horton's
+            </h1>
+            <fieldset id="options">
+
+
+               <form action="result.php" method="post">
+                  <p>
+                     Number of Coffees: 
+                     <input type="number" min="0" max="10" step="1" value="1" required="" title="even positive number less than or equal to 10" name="Coffees">
+
+                  </p>
+                  <p id="size" > Size: 
+                     <select name="Size">
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                        <option>X-Large</option>
+                     </select>
+                  </p>
+                  <p>
+                     How Many Creams?: 
+                     <input type="number" min="0" max="20" step="1" value="0" required="" title="even positive number less than or equal to 10" name="Creams">
+                  </p>
+                  <p>
+                     How Many sugars?: 
+
+                     <input type="number" min="0" max="20" step="1" value="0" required="" title="even positive number less than or equal to 10" name="Sugars">
+                  </p>
+                  <button class="Confirm" type="submit" name="order">Confirm Order</button> 
+
+
+
+
+               </form>
+               <form action="slang.html" method="post">
+                  <button class="Slang" type="submit" name="order">Slang</button> 
+               </form>
+            </fieldset>  
+         </center>
+      </div>
+   </body>
+</html>

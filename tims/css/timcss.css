@@ -1,0 +1,56 @@
+/* 
+    Created on : 14-Jun-2015, 5:37:24 PM
+    Author     : Mena
+*/
+body{
+   background-image: url("image.gif");
+}  
+#options{
+   width: 30%;
+   font-family:'Ek Mukta';
+   background-color: burlywood;
+}
+#result{
+   background-color: white;
+   margin-bottom: 5px;
+}
+h1{
+   padding-top: 0px;
+   font-family:'Ek Mukta';
+   font-size: 4vw;
+   margin: 0px;
+   color: darkred;
+}
+.imgWrapper {
+   position: relative;
+   padding-bottom: 22.25%; /* 16:9 */
+   padding-top: 0px;
+   height: 0;
+}
+.imgWrapper img {
+   top: 0;
+   left: 0;
+   width: 45%;
+   height: 100%;
+}
+p
+{
+   font-size: 1.5vw;
+   margin: 5px;
+}
+input,select,button
+{
+   font-size: 1.5vw;
+}
+#choices
+{
+   margin-left: 20%;
+}
+input[type=radio] {
+   width: 10%;
+   height: .75em;
+}
+#end
+{
+   font-weight: bold;
+}

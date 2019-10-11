@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+Mena Shafik 
+Created June 12,2015
+Assignment 5
+this is slang version where they must chose one of the more common orders known to customers
+-->
+<html>
+   <head>
+      <title>Tim Horton's Order</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ek+Mukta">
+      <link rel="stylesheet" href="css/timcss.css">
+   </head>
+   <body>
+      <div>
+         <center>
+
+            <h1>
+               ... Or use the Slang!
+            </h1>
+            <fieldset id="options">
+               <form action="result.php" method="post">
+                  <p>
+                     Number of Coffees: 
+                     <input type="number" min="0" max="10" step="1" value="1" required="" title="even positive number less than or equal to 10" name="Coffees">
+
+                  </p>
+                  <p id="size" > Size: 
+                     <select name="Size2">
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                        <option>X-Large</option>
+                     </select>
+                  </p>
+                  <center>
+                     <p id="choices" align="left">
+                        <input type="radio" name="slang" value="1" checked>Regular <br>
+                        <input type="radio" name="slang" value="2">Double Double<br>
+                        <input type="radio" name="slang" value="3">Triple Triple<br>
+                        <input type="radio" name="slang" value="4">Black<br>
+                        <input type="radio" name="slang" value="5">Black One Sugar<br>
+                        <input type="radio" name="slang" value="6">Black Two Sugars<br>
+                        <input type="radio" name="slang" value="7">Black Three Sugars<br>
+                     </p>
+                  </center>
+                  <button class="Confirm" type="submit" name="order">Confirm Order</button> 
+
+               </form>
+            </fieldset>
+      </div>
+   </body>
+</html>
